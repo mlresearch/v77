@@ -1,0 +1,350 @@
+@PROCEEDINGS{ACML-2017,
+  booktitle =    {Proceedings of the Ninth Asian Conference on Machine Learning},
+  name =         {Asian Conference on Machine Learning},
+  shortname =    {ACML},
+  year =         {2017},
+  editor =       {Min-Ling Zhang and Yung-Kyun Noh},
+  volume =       {77},
+  start =        {2017-11-15},
+  end =          {2017-11-17},
+  location =      {Yonsei University, Seoul, Republic of Korea},
+  url =          {http://www.acml-conf.org/2017/},
+  sections =     {Preface|Accepted Papers}
+}
+
+
+@INPROCEEDINGS{preface,
+  author =       {Min-Ling Zhang and Yung-Kyun Noh},
+  pages =        {i-xv},
+  section =      {Preface}
+}
+
+@INPROCEEDINGS{pan17,
+  title =        {Learning Convolutional Neural Networks using Hybrid Orthogonal Projection and Estimation},
+  author =       {Pan, Hengyue and Jiang, Hui},
+  pages =        {1-16},
+  abstract =     {Convolutional neural networks (CNNs) have yielded the excellent performance in a variety of computer vision tasks, where CNNs typically adopt a similar structure consisting of convolution layers, pooling layers and fully connected layers. In this paper, we propose to apply a novel method, namely Hybrid Orthogonal Projection and Estimation (HOPE), to CNNs in order to introduce orthogonality into the CNN structure. The HOPE model can be viewed as a hybrid model to combine feature extraction using orthogonal linear projection with mixture models. It is an effective model to extract useful information from the original high-dimension feature vectors and meanwhile filter out irrelevant noises. In this work, we present three different ways to apply the HOPE models to CNNs, i.e., {\em HOPE-Input}, {\em single-HOPE-Block} and {\em multi-HOPE-Blocks}. For {\em HOPE-Input} CNNs, a HOPE layer is directly used right after the input to de-correlate high-dimension input feature vectors. Alternatively, in {\em single-HOPE-Block} and {\em multi-HOPE-Blocks} CNNs, we consider to use HOPE layers to replace one or more blocks in the CNNs, where one block may include several convolutional layers and one pooling layer. The experimental results on CIFAR-10, CIFAR-100 and ImageNet databases have shown that the orthogonal constraints imposed by the HOPE layers can significantly improve the performance of CNNs in these image classification tasks (we have achieved one of the best performance when image augmentation has not been applied, and top 5 performance with image augmentation).},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{glasmachers17,
+  title =        {Limits of End-to-End Learning},
+  author =       {Glasmachers, Tobias},
+  pages =        {17-32},
+  abstract =     {End-to-end learning refers to training a possibly complex learning system by applying gradient-based learning to the system as a whole. End-to-end learning systems are specifically designed so that all modules are differentiable. In effect, not only a central learning machine, but also all ``peripheral'' modules like representation learning and memory formation are covered by a holistic learning process. The power of end-to-end learning has been demonstrated on many tasks, like playing a whole array of Atari video games with a single architecture. While pushing for solutions to more challenging tasks, network architectures keep growing more and more complex.
+In this paper we ask the question whether and to what extent end-to-end learning is a future-proof technique in the sense of \emph{scaling} to complex and diverse data processing architectures. We point out potential inefficiencies, and we argue in particular that end-to-end learning does not make optimal use of the modular design of present neural networks. Our surprisingly simple experiments demonstrate these inefficiencies, up to the complete breakdown of learning.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{hsia17,
+  title =        {A Study on Trust Region Update Rules in Newton Methods for Large-scale Linear Classification},
+  author =       {Hsia, Chih-Yang and Zhu, Ya and Lin, Chih-Jen},
+  pages =        {33-48},
+  abstract =     {The main task in training a linear classifier is to solve an unconstrained minimization problem. To apply an optimization method typically we iteratively find a good direction and then decide a suitable step size. Past developments of extending optimization methods for large-scale linear classification focus on finding the direction, but little attention has been paid on adjusting the step size. In this work, we explain that inappropriate step-size adjustment may lead to serious slow convergence. Among the two major methods for step-size selection, line search and trust region, we focus on investigating the trust region methods. After presenting some detailed analysis, we develop novel and effective techniques to adjust the trust-region size. Experiments indicate that our new settings significantly outperform existing implementations for large-scale linear classification.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{chauhan17,
+  title =        {Mini-batch Block-coordinate based Stochastic Average Adjusted Gradient Methods to Solve Big Data Problems},
+  author =       {Chauhan, Vinod Kumar and Dahiya, Kalpana and Sharma, Anuj},
+  pages =        {49-64},
+  abstract =     {Big Data problems in Machine Learning have large number of data points or large number of features, or both, which make training of models difficult because of high computational complexities of single iteration of learning algorithms. To solve such learning problems, Stochastic Approximation offers an optimization approach to make complexity of each iteration independent of number of data points by taking only one data point or mini-batch of data points during each iteration and thereby helping to solve problems with large number of data points. Similarly, Coordinate Descent offers another optimization approach to make iteration complexity independent of the number of features/coordinates/variables by taking only one feature or block of features, instead of all, during an iteration and thereby helping to solve problems with large number of features. In this paper, an optimization framework, namely, Batch Block Optimization Framework has been developed to solve big data problems using the best of Stochastic Approximation as well as the best of Coordinate Descent approaches, independent of any solver. This framework is used to solve strongly convex and smooth empirical risk minimization problem with gradient descent (as a solver) and two novel Stochastic Average Adjusted Gradient methods have been proposed to reduce variance in mini-batch and block-coordinate setting of the developed framework. Theoretical analysis prove linear convergence of the proposed methods and empirical results with bench marked datasets prove the superiority of proposed methods against existing methods.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{yang17,
+  title =        {Instance Specific Discriminative Modal Pursuit: A Serialized Approach},
+  author =       {Yang, Yang and Zhan, De-Chuan and Fan, Ying and Jiang, Yuan},
+  pages =        {65-80},
+  abstract =     {With the fast development of data collection techniques, a huge amount of complex multi-modal data are generated, shared and stored on the Internet. The burden of extracting multi-modal features for test instances in data analysis becomes the main fact that hurts the efficiency of prediction.  In this paper, in order to reduce the modal extraction cost in serialized classification system, we propose a novel end-to-end serialized adaptive decision approach named Discriminative Modal Pursuit ({\sc Dmp}), which can automatically extract instance-specifically discriminative modal sequence for reducing the cost of feature extraction in the test phase. Rather than jointly optimize a highly non-convex empirical risk minimization problem, we are inspired by LSTM, and the proposed {\sc Dmp} can turn to learn the decision policies which predict the label information and decide the modalities to be extracted simultaneously within limited modal acquisition budget. Consequently, {\sc Dmp} approach can balance the classification performance and modal feature extraction cost by utilizing different modalities for different test instances. Empirical studies show that {\sc Dmp} is more efficient and effective than existing modal/feature extraction methods.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{xie17,
+  title =        {A Quantum-Inspired Ensemble Method and Quantum-Inspired Forest Regressors},
+  author =       {Xie, Zeke and Sato, Issei},
+  pages =        {81-96},
+  abstract =     {We propose a Quantum-Inspired Subspace(QIS) Ensemble Method for generating feature ensembles based on feature selections. We assign each principal component a Fraction Transition Probability as its probability weight based on Principal Component Analysis and quantum interpretations. In order to generate the feature subset for each base regressor, we select a feature subset from principal components based on Fraction Transition Probabilities. The idea originating from quantum mechanics can encourage ensemble diversity and the accuracy simultaneously. We incorporate Quantum-Inspired Subspace Method into Random Forest and propose Quantum-Inspired Forest. We theoretically prove that the quantum interpretation corresponds to the first order approximation of ensemble regression. We also evaluate the empirical performance of Quantum-Inspired Forest and Random Forest in multiple hyperparameter settings. Quantum-Inspired Forest proves the significant robustness of the default hyperparameters on most data sets. The contribution of this work is two-fold, a novel ensemble regression algorithm inspired by quantum mechanics and the theoretical connection between quantum interpretations and machine learning algorithms.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{blanchet17,
+  title =        {Distributionally Robust Groupwise Regularization Estimator},
+  author =       {Blanchet, Jose and Kang, Yang},
+  pages =        {97-112},
+  abstract =     {Regularized estimators in the context of group variables have been applied successfully in model and feature selection in order to preserve interpretability. We formulate a Distributionally Robust Optimization (DRO) problem which recovers popular estimators, such as Group Square Root Lasso (GSRL). Our DRO formulation allows us to interpret GSRL as a game, in which we learn a regression parameter while an adversary chooses a perturbation of the data. We wish to pick the parameter to minimize the expected loss under any plausible model chosen by the adversary - who, on the other hand, wishes to increase the expected loss. The regularization parameter turns out to be precisely determined by the amount of perturbation on the training data allowed by the adversary. In this paper, we introduce a data-driven (statistical) criterion for the optimal choice of regularization, which we evaluate asymptotically, in closed form, as the size of the training set increases. Our easy-to-evaluate regularization formula is compared against cross-validation, showing comparable performance.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{tao17,
+  title =        {Multi-view Clustering with Adaptively Learned Graph},
+  author =       {Tao, Hong and Hou, Chenping and Zhu, Jubo and Yi, Dongyun},
+  pages =        {113-128},
+  abstract =     {Multi-view clustering, which aims to improve the clustering performance by exploring the data's multiple representations, has become an important research direction. Graph based methods have been widely studied and achieve promising performance for multi-view clustering. However, most existing multi-view graph based methods perform clustering on the fixed input graphs, and the results are dependent on the quality of input graphs. In this paper, instead of fixing the input graphs, we propose Multi-view clustering with Adaptively Learned Graph (MALG), learning a new common similarity matrix. In our model, we not only consider the importance of multiple graphs from view level, but also focus on the performance of similarities within a view from sample-pair level. Sample-pair-specific weights are introduced to exploit the connection across views in more depth. In addition, the obtained optimal graph can be partitioned into specific clusters directly, according to its connected components. Experimental results on toy and real-world datasets demonstrate the efficacy of the proposed algorithm.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{chowdhury17,
+  title =        {Select-and-Evaluate: A Learning Framework for Large-Scale Knowledge Graph Search},
+  author =       {Chowdhury, F A Rezaur Rahman and Ma, Chao and Islam, Md Rakibul and Namaki, Mohammad Hossein and Faruk, Mohammad Omar and Doppa, Janardhan Rao},
+  pages =        {129-144},
+  abstract =     {Querying graph structured data is a fundamental operation that enables important applications including knowledge graph search, social network analysis, and cyber-network security. However, the growing size of real-world data graphs poses severe challenges for graph search to meet the response-time requirements of the applications. To address these scalability challenges, we develop a learning framework for graph search called {\bf S}ele{\bf c}t-and-Ev{\bf al}uat{\bf e} (SCALE). The key insight is to select a small part of the data graph that is sufficient to answer a given query in order to satisfy the specified constraints on time or accuracy. We formulate the problem of generating the candidate subgraph as a computational search process and induce search control knowledge from training queries using imitation learning. First, we define a search space over candidate selection plans, and identify target selection plans corresponding to the training queries by performing an expensive search. Subsequently, we learn greedy search control knowledge to imitate the search behavior of the target selection plans. Our experiments on large-scale knowledge graphs including DBpedia, YAGO, and Freebase show that using the learned selection plans, we can significantly improve the computational-efficiency of graph search to achieve high accuracy.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{leathart17,
+  title =        {Probability Calibration Trees},
+  author =       {Leathart, Tim and Frank, Eibe and Holmes, Geoffrey and Pfahringer, Bernhard},
+  pages =        {145-160},
+  abstract =     {Obtaining accurate and well calibrated probability estimates from classifiers is useful in many applications, for example, when minimising the expected cost of classifications. Existing methods of calibrating probability estimates are applied globally, ignoring the potential for improvements by applying a more fine-grained model. We propose probability calibration trees, a modification of logistic model trees that identifies regions of the input space in which different probability calibration models are learned to improve performance. We compare probability calibration trees to two widely used calibration methods---isotonic regression and Platt scaling---and show that our method results in lower root mean squared error on average than both methods, for estimates produced by a variety of base learners.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{gregorova17,
+  title =        {Learning Predictive Leading Indicators for Forecasting Time Series Systems with Unknown Clusters of Forecast Tasks},
+  author =       {Gregorov{\'a}, Magda and Kalousis, Alexandros and Marchand-Maillet, St{\'e}phane},
+  pages =        {161-176},
+  abstract =     {We present a new method for forecasting systems of multiple interrelated time series. The method learns the forecast models together with discovering leading indicators from within the system that serve as good predictors improving the forecast accuracy and a cluster structure of the predictive tasks around these. The method is based on the classical linear vector autoregressive model (VAR) and links the discovery of the leading indicators to inferring sparse graphs of Granger causality. We formulate a new constrained optimisation problem to promote the desired sparse structures across the models and the sharing of information amongst the learning tasks in a multi-task manner. We propose an algorithm for solving the problem and document on a battery of synthetic and real-data experiments the advantages of our new method over baseline VAR models as well as the state-of-the-art sparse VAR learning methods.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{pang17,
+  title =        {Locally Smoothed Neural Networks},
+  author =       {Pang, Liang and Lan, Yanyan and Xu, Jun and Guo, Jiafeng and Cheng, Xueqi},
+  pages =        {177-191},
+  abstract =     {Convolutional Neural Networks (CNN) and the locally connected layer are limited in capturing the importance and relations of different local receptive fields, which are often crucial for tasks such as face verification, visual question answering, and word sequence prediction. To tackle the issue, we propose a novel locally smoothed neural network (LSNN) in this paper. The main idea is to represent the weight matrix of the locally connected layer as the product of the kernel and the smoother, where the kernel is shared over different local receptive fields, and the smoother is for determining the importance and relations of different local receptive fields. Specifically, a multi-variate Gaussian function is utilized to generate the smoother, for modeling the location relations among different local receptive fields. Furthermore, the content information can also be leveraged by setting the mean and precision of the Gaussian function according to the content. Experiments on some variant of MNIST clearly show our advantages over CNN and locally connected layer.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{sangnier17,
+  title =        {Data sparse nonparametric regression with $\epsilon$-insensitive losses},
+  author =       {Sangnier, Maxime and Fercoq, Olivier and d'Alch{\'e}-Buc, Florence},
+  pages =        {192-207},
+  abstract =     {Leveraging the celebrated	support vector regression (SVR) method, we propose a unifying framework in order to deliver regression machines in reproducing kernel Hilbert spaces (RKHSs) with data sparsity. The central point is a new definition of $\epsilon$-insensitivity, valid for many regression losses (including quantile and expectile regression) and their multivariate extensions.	We show that the dual optimization problem to empirical risk minimization with $\epsilon$-insensitivity involves a data sparse regularization. We also provide an analysis of the excess of risk as well as a randomized coordinate descent algorithm for solving the dual.	Numerical experiments validate our approach.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{li17,
+  title =        {Rate Optimal Estimation for High Dimensional Spatial Covariance Matrices},
+  author =       {Li, Yi and Ding, Aidong Adam and Dy, Jennifer},
+  pages =        {208-223},
+  abstract =     {Spatial covariance matrix estimation is of great significance in many applications in climatology, econometrics and many other fields with complex data structures involving spatial dependencies. High dimensionality brings new challenges to this problem, and no theoretical optimal estimator has been proved for the spatial high-dimensional covariance matrix. Over the past decade, the method of regularization has been introduced to high-dimensional covariance estimation for various structured matrices, to achieve rate optimal estimators. In this paper, we aim to bridge the gap in these two research areas. We use a structure of block bandable covariance matrices to incorporate spatial dependence information, and study rate optimal estimation of this type of structured high dimensional covariance matrices. A double tapering estimator is proposed, and is shown to achieve the asymptotic minimax error bound. Numerical studies on both synthetic and real data are conducted showing the improvement of the double tapering estimator over the sample covariance matrix estimator.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{liu17,
+  title =        {PHD: A Probabilistic Model of Hybrid Deep Collaborative Filtering for Recommender Systems},
+  author =       {Liu, Jie and Wang, Dong and Ding, Yue},
+  pages =        {224-239},
+  abstract =     {Collaborative Filtering (CF), a well-known approach in producing recommender systems, has achieved wide use and excellent performance not only in research but also in industry. However, problems related to cold start and data sparsity have caused CF to attract an increasing amount of attention in efforts to solve these problems. Traditional approaches adopt side information to extract effective latent factors but still have some room for growth. Due to the strong characteristic of feature extraction in deep learning, many researchers have employed it with CF to extract effective representations and to enhance its performance in rating prediction. Based on this previous work, we propose a probabilistic model that combines a stacked denoising autoencoder and a convolutional neural network together with auxiliary side information (i.e, both from users and items) to extract users and items' latent factors, respectively. Extensive experiments for four datasets demonstrate that our proposed model outperforms other traditional approaches and deep learning models making it state of the art.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{zhang17a,
+  title =        {Adaptive Sampling Scheme for Learning in Severely Imbalanced Large Scale Data},
+  author =       {Zhang, Wei and Kobeissi, Said and Tomko, Scott and Challis, Chris},
+  pages =        {240-247},
+  abstract =     {Imbalanced data poses a serious challenge for many machine learning and data mining applications. It may significantly affect the performance of learning algorithms. In digital marketing applications, events of interest (positive instances for building predictive models) such as click and purchase are rare. A retail website can easily receive a million visits every day, yet only a small percentage of visits lead to purchase. The large amount of raw data and the small percentage of positive instances make it challenging to build decent predictive models in a timely fashion. In this paper, we propose an adaptive sampling strategy to deal with this problem. It efficiently returns high quality training data, ensures system responsiveness and improves predictive performances.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{zhang17b,
+  title =        {ST-GAN: Unsupervised Facial Image Semantic Transformation Using Generative Adversarial Networks},
+  author =       {Zhang, Jichao and Zhong, Fan and Cao, Gongze and Qin, Xueying},
+  pages =        {248-263},
+  abstract =     {Image semantic transformation aims to convert one image into another image with different semantic features (e.g., face pose, hairstyle). The previous methods, which learn the mapping function from one image domain to the other, require supervised information directly or indirectly. In this paper, we propose an unsupervised image semantic transformation method called semantic transformation generative adversarial networks (ST-GAN), and experimentally verify it on face dataset. We further improve ST-GAN with the Wasserstein distance to generate more realistic images and propose a method called local mutual information maximization to obtain a more explicit semantic transformation. ST-GAN has the ability to map the image semantic features into the latent vector and then perform transformation by controlling the latent vector.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{chang17,
+  title =        {Deep Competitive Pathway Networks},
+  author =       {Chang, Jia-Ren and Chen, Yong-Sheng},
+  pages =        {264-278},
+  abstract =     {In the design of deep neural architectures, recent studies have demonstrated the benefits of grouping subnetworks into a larger network. For examples, the Inception architecture integrates multi-scale subnetworks and the residual network can be regarded that a residual unit combines a residual subnetwork with an identity shortcut. In this work, we embrace this observation and propose the Competitive Pathway Network (CoPaNet). The CoPaNet comprises a stack of competitive pathway units and each unit contains multiple parallel residual-type subnetworks followed by a max operation for feature competition. This mechanism enhances the model capability by learning a variety of features in subnetworks. The proposed strategy explicitly shows that the features propagate through pathways in various routing patterns, which is referred to as pathway encoding of category information. Moreover, the cross-block shortcut can be added to the CoPaNet to encourage feature reuse. We evaluated the proposed CoPaNet on four object recognition benchmarks: CIFAR-10, CIFAR-100, SVHN, and ImageNet. CoPaNet obtained the state-of-the-art or comparable results using similar amounts of parameters. The code of CoPaNet is available at: \url{https://github.com/JiaRenChang/CoPaNet}.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{nguyen17,
+  title =        {Regret for Expected Improvement over the Best-Observed Value and Stopping Condition},
+  author =       {Nguyen, Vu and Gupta, Sunil and Rana, Santu and Li, Cheng and Venkatesh, Svetha},
+  pages =        {279-294},
+  abstract =     {Bayesian optimization (BO) is a sample-efficient method for global optimization of expensive, noisy, black-box functions using probabilistic methods. The performance of a BO method depends on its selection strategy through the acquisition function. Expected improvement (EI) is one of the most widely used acquisition functions for BO that finds the expectation of the improvement function over the incumbent. The incumbent is usually selected as the best-observed value so far, termed as $y^{\max}$ (for the maximizing problem). Recent work has studied the convergence rate for EI under some mild assumptions or zero noise of observations. Especially, the work of Wang and de Freitas (2014) has derived the sublinear regret for EI under a stochastic noise. However, due to the difficulty in stochastic noise setting and to make the convergent proof feasible, they use an alternative choice for the incumbent as the maximum of the Gaussian process predictive mean, $\mu^{\max}$. This modification makes the algorithm computationally inefficient because it requires an additional global optimization step to estimate $\mu^{\max}$ that is costly and may be inaccurate. To address this issue, we derive a sublinear convergence rate for EI using the commonly used $y^{\max}$. Moreover, our analysis is the first to study a stopping criteria for EI to prevent unnecessary evaluations. Our analysis complements the results of Wang and de Freitas (2014) to theoretically cover two incumbent settings for EI. Finally, we demonstrate empirically that EI using $y^{\max}$ is both more computationally efficiency and more accurate than EI using $\mu^{\max}$.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{takahashi17,
+  title =        {Scale-Invariant Recognition by Weight-Shared CNNs in Parallel},
+  author =       {Takahashi, Ryo and Matsubara, Takashi and Uehara, Kuniaki},
+  pages =        {295-310},
+  abstract =     {Deep convolutional neural networks (CNNs) have become one of the most successful methods for image processing tasks in past few years. Recent studies on modern residual architectures, enabling CNNs to be much deeper, have achieved much better results thanks to their high expressive ability by numerous parameters. In general, CNNs are known to have the robustness to the small parallel shift of objects in images by their local receptive fields, weight parameters shared by each unit, and pooling layers sandwiching them. However, CNNs have a limited robustness to the other geometric transformations such as scaling and rotation, and this lack becomes an obstacle to performance improvement even now. This paper proposes a novel network architecture, the \emph{weight-shared multi-stage network} (WSMS-Net), and focuses on acquiring the scale invariance by constructing of multiple stages of CNNs. The WSMS-Net is easily combined with existing deep CNNs, enables existing deep CNNs to acquire a robustness to the scaling, and therefore, achieves higher classification accuracy on CIFAR-10, CIFAR-100 and ImageNet datasets.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{zhang17c,
+  title =        {Using Deep Neural Networks to Automate Large Scale Statistical Analysis for Big Data Applications},
+  author =       {Zhang, Rongrong and Deng, Wei and Zhu, Michael Yu},
+  pages =        {311-326},
+  abstract =     {Statistical analysis (SA) is a complex process to deduce population properties from analysis of data. It usually takes a well-trained analyst to successfully perform SA, and it becomes extremely challenging to apply SA to big data applications. We propose to use deep neural networks  to automate the SA process. In particular, we propose to construct convolutional neural networks (CNNs) to perform automatic model selection and parameter estimation, two most important SA tasks. We refer to the resulting CNNs as the neural model selector and the neural model estimator, respectively, which can be properly trained using labeled data systematically generated from candidate models. Simulation study shows that both the selector and estimator demonstrate excellent performances. The idea and proposed framework can be further extended to automate the entire SA process and have the potential to revolutionize how SA is performed in big data analytics.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{lecoutre17,
+  title =        {Recognizing Art Style Automatically in Painting with Deep Learning},
+  author =       {Lecoutre, Adrian and Negrevergne, Benjamin and Yger, Florian},
+  pages =        {327-342},
+  abstract =     {The artistic style (or artistic movement) of a painting is a rich descriptor that captures both visual and historical information about the painting. Correctly identifying the artistic style of a paintings is crucial for indexing large artistic databases. In this paper, we investigate the use of deep residual neural to solve the problem of detecting the artistic style of a painting and outperform existing approaches to reach an accuracy of $62\%$ on the Wikipaintings dataset (for 25 different style). To achieve this result, the network is first pre-trained on ImageNet, and deeply retrained for artistic style. We empirically evaluate that to achieve the best performance, one need to retrain about 20 layers. This suggests that the two tasks are as similar as expected, and explain the previous success of hand crafted features. We also demonstrate that the style detected on the Wikipaintings dataset are consistent with styles detected on an independent dataset and describe a number of experiments we conducted to validate this approach both qualitatively and quantitatively.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{goix17,
+  title =        {One Class Splitting Criteria for Random Forests},
+  author =       {Goix, Nicolas and Drougard, Nicolas and Brault, Romain and Chiapino, Mael},
+  pages =        {343-358},
+  abstract =     {Random Forests (RFs) are strong machine learning tools for classification and regression. However, they remain supervised algorithms, and no extension of RFs to the one-class setting has been proposed, except for techniques based on second-class sampling. This work fills this gap by proposing a natural methodology to extend standard splitting criteria to the one-class setting, structurally generalizing RFs to one-class classification. An extensive benchmark of seven state-of-the-art anomaly detection algorithms is also presented. This empirically demonstrates the relevance of our approach.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{walder17,
+  title =        {Computer Assisted Composition with Recurrent Neural Networks},
+  author =       {Walder, Christian and Kim, Dongwoo},
+  pages =        {359-374},
+  abstract =     {Sequence modeling with neural networks has lead to powerful models of symbolic music data. We address the problem of exploiting these models to reach creative musical goals, by combining with human input. To this end we generalise previous work, which sampled Markovian sequence models under the constraint that the sequence belong to the language of a given finite state machine provided by the human. We consider more expressive non-Markov models, thereby requiring approximate sampling which we provide in the form of an efficient sequential Monte Carlo method. In addition we provide and compare with a beam search strategy for conditional probability maximisation.
+Our algorithms are capable of convincingly re-harmonising famous musical works. To demonstrate this we provide visualisations, quantitative experiments, a human listening test and audio examples. We find both the sampling and optimisation procedures to be effective, yet complementary in character. For the case of highly permissive constraint sets, we find that sampling is to be preferred due to the overly regular nature of the optimisation based results. The generality of our algorithms permits countless other creative applications.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{shiino17,
+  title =        {Whitening-Free Least-Squares Non-Gaussian Component Analysis},
+  author =       {Shiino, Hiroaki and Sasaki, Hiroaki and Niu, Gang and Sugiyama, Masashi},
+  pages =        {375-390},
+  abstract =     {\emph{Non-Gaussian component analysis} (NGCA) is an unsupervised linear dimension reduction method that extracts low-dimensional non-Gaussian ``signals'' from high-dimensional data contaminated with Gaussian noise. NGCA can be regarded as a generalization of \emph{projection pursuit} (PP) and \emph{independent component analysis} (ICA) to multi-dimensional and dependent non-Gaussian components. Indeed, seminal approaches to NGCA are based on PP and ICA. Recently, a novel NGCA approach called \emph{least-squares NGCA} (LSNGCA) has been developed, which gives a solution analytically through least-squares estimation of \emph{log-density gradients} and eigendecomposition. However, since \emph{pre-whitening} of data is involved in LSNGCA, it performs unreliably when the data covariance matrix is ill-conditioned, which is often the case in high-dimensional data analysis. In this paper, we propose a \emph{whitening-free} variant of LSNGCA and experimentally demonstrate its superiority.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{longi17,
+  title =        {Semi-supervised Convolutional Neural Networks for Identifying Wi-Fi Interference Sources},
+  author =       {Longi, Krista and Pulkkinen, Teemu and Klami, Arto},
+  pages =        {391-406},
+  abstract =     {We present a convolutional neural network for identifying radio frequency devices from signal data, in order to detect possible interference sources for wireless local area networks. Collecting training data for this problem is particularly challenging due to a high number of possible interfering devices, difficulty in obtaining precise timings, and the need to measure the devices in varying conditions. To overcome this challenge we focus on semi-supervised learning, aiming to minimize the need for reliable training samples while utilizing larger amounts of unsupervised labels to improve the accuracy. In particular, we propose a novel structured extension of the pseudo-label technique to take advantage of temporal continuity in the data and show that already a few seconds of training data for each device is sufficient for highly accurate recognition.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{brouard17,
+  title =        {Magnitude-Preserving Ranking for Structured Outputs},
+  author =       {Brouard, C{\'e}line and Bach, Eric and B{\"o}cker, Sebastian and Rousu, Juho},
+  pages =        {407-422},
+  abstract =     {In this paper, we present a novel method for solving structured prediction problems, based on combining Input Output Kernel Regression (IOKR) with an extension of magnitude-preserving ranking to structured output spaces. In particular, we concentrate on the case where a set of candidate outputs has been given, and the associated pre-image problem calls for ranking the set of candidate outputs. Our method, called magnitude-preserving IOKR, both aims to produce a good approximation of the output feature vectors, and to preserve the magnitude differences of the output features in the candidate sets. For the case where the candidate set does not contain corresponding 'correct' inputs, we propose a method for approximating the inputs through application of IOKR in the reverse direction. We apply our method to two learning problems: cross-lingual document retrieval and metabolite identification. Experiments show that the proposed approach improves performance over IOKR, and in the latter application obtains the current state-of-the-art accuracy.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{zhao17,
+  title =        {A Word Embeddings Informed Focused Topic Model},
+  author =       {Zhao, He and Du, Lan and Buntine, Wray},
+  pages =        {423-438},
+  abstract =     {In natural language processing and related fields, it has been shown that the word embeddings can successfully capture both the semantic and syntactic features of words. They can serve as complementary information to topics models, especially for the cases where word co-occurrence data is insufficient, such as with short texts. In this paper, we propose a focused topic model where how a topic focuses on words is informed by word embeddings. Our models is able to discover more informed and focused topics with more representative words, leading to better modelling accuracy and topic quality. With the data argumentation technique, we can derive an efficient Gibbs sampling algorithm that benefits from the fully local conjugacy of the model. We conduct extensive experiments on several real world datasets, which demonstrate that our model achieves comparable or improved performance in terms of both perplexity and topic coherence, particularly in handling short text data.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{hermans17,
+  title =        {Accumulated Gradient Normalization},
+  author =       {Hermans, Joeri R. and Spanakis, Gerasimos and M{\"o}ckel, Rico},
+  pages =        {439-454},
+  abstract =     {This work addresses the instability in asynchronous data parallel optimization. It does so by introducing a novel distributed optimizer which is able to efficiently optimize a centralized model under communication constraints. The optimizer achieves this by pushing a normalized sequence of first-order gradients to a parameter server. This implies that the magnitude of a worker delta is smaller compared to an accumulated gradient, and provides a better direction towards a minimum compared to first-order gradients, which in turn also forces possible implicit momentum fluctuations to be more aligned since we make the assumption that all workers contribute towards a single minima. As a result, our approach mitigates the parameter staleness problem more effectively since staleness in asynchrony induces (implicit) momentum, and achieves a better convergence rate compared to other optimizers such as asynchronous \textsc{easgd} and \textsc{dynsgd}, which we show empirically.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{remes17,
+  title =        {A Mutually-Dependent Hadamard Kernel for Modelling Latent Variable Couplings},
+  author =       {Remes, Sami and Heinonen, Markus and Kaski, Samuel},
+  pages =        {455-470},
+  abstract =     {We introduce a novel kernel that models input-dependent couplings across multiple latent processes. The pairwise joint kernel measures covariance along inputs and across different latent signals in a mutually-dependent fashion. A latent correlation Gaussian process (LCGP) model combines these non-stationary latent components into multiple outputs by an input-dependent mixing matrix. Probit classification and support for multiple observation sets are derived by Variational Bayesian inference. Results on several datasets indicate that the LCGP model can recover the correlations between latent signals while simultaneously achieving state-of-the-art performance. We highlight the latent covariances with an EEG classification dataset where latent brain processes and their couplings simultaneously emerge from the model.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{kang17,
+  title =        {Learning Deep Semantic Embeddings for Cross-Modal Retrieval},
+  author =       {Kang, Cuicui and Liao, Shengcai and Li, Zhen and Cao, Zigang and Xiong, Gang},
+  pages =        {471-486},
+  abstract =     {Deep learning methods have been actively researched for cross-modal retrieval, with the softmax cross-entropy loss commonly applied for supervised learning. However, the softmax cross-entropy loss is known to result in large intra-class variances, which is not not very suited for cross-modal matching. In this paper, a deep architecture called Deep Semantic Embedding (DSE) is proposed, which is trained in an end-to-end manner for image-text cross-modal retrieval. With images and texts mapped to a feature embedding space, class labels are used to guide the embedding learning, so that the embedding space has a semantic meaning common for both images and texts. This way, the difference between different modalities is eliminated. Under this framework, the center loss is introduced beyond the commonly used softmax cross-entropy loss to achieve both inter-class separation and intra-class compactness. Besides, a distance based softmax cross-entropy loss is proposed to jointly consider the softmax cross-entropy and center losses in fully gradient based learning. Experiments have been done on three popular image-text cross-modal retrieval databases, showing that the proposed algorithms have achieved the best overall performances.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{mao17,
+  title =        {Pyramid Person Matching Network for Person Re-identification},
+  author =       {Mao, Chaojie and Li, Yingming and Zhang, Zhongfei and Zhang, Yaqing and Li, Xi},
+  pages =        {487-497},
+  abstract =     {In this work, we present a deep convolutional pyramid person matching network (PPMN) with specially designed Pyramid Matching Module to address the problem of person re-identification. The architecture takes a pair of RGB images as input, and outputs a similiarity value indicating whether the two input images represent the same person or not. Based on deep convolutional neural networks, our approach first learns the discriminative semantic representation with the semantic-component-aware features for persons and then employs the Pyramid Matching Module to match the common semantic-components of persons, which is robust to the variation of spatial scales and misalignment of locations posed by viewpoint changes. The above two processes are jointly optimized via a unified end-to-end deep learning scheme. Extensive experiments on several benchmark datasets demonstrate the effectiveness of our approach against the state-of-the-art approaches, especially on the rank-1 recognition rate.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{upadhya17,
+  title =        {Learning RBM with a DC programming Approach},
+  author =       {Upadhya, Vidyadhar and Sastry, P. S.},
+  pages =        {498-513},
+  abstract =     {By exploiting the property that the RBM log-likelihood function is the difference of convex functions, we formulate a stochastic variant of the difference of convex functions (DC) programming to minimize the negative log-likelihood. Interestingly, the traditional contrastive divergence algorithm is a special case of the above formulation and the hyperparameters of the two algorithms can be chosen such that the amount of computation per mini-batch is identical. We show that for a given computational budget the proposed algorithm almost always reaches a higher log-likelihood more rapidly, compared to the standard contrastive divergence algorithm. Further, we modify this algorithm to use the centered gradients and show that it is more efficient and effective compared to the standard centered gradient algorithm on benchmark datasets.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{ma17,
+  title =        {Multi-Task Structured Prediction for Entity Analysis: Search-Based Learning Algorithms},
+  author =       {Ma, Chao and Doppa, Janardhan Rao and Tadepalli, Prasad and Shahbazi, Hamed and Fern, Xiaoli},
+  pages =        {514-529},
+  abstract =     {Entity analysis in natural language processing involves solving multiple structured prediction problems such as mention detection, coreference resolution, and entity linking. We explore the space of search-based learning approaches to solve the problem of {\em multi-task structured prediction} (MTSP) in the context of entity analysis. In this paper, we study three different search architectures to solve MTSP problems that make different tradeoffs between speed and accuracy of training and inference. In all three architectures, we  learn one or more scoring functions that employ both intra-task and inter-task features. In the ``pipeline'' architecture, which is the fastest, we solve different tasks one after another in a pipelined fashion. In the ``joint'' architecture, which is the most expensive,  we formulate MTSP as a single-task structured prediction, and search the joint space of multi-task structured outputs. To improve the speed of joint architecture, we introduce two different pruning methods and associated learning techniques. In the intermediate ``cyclic'' architecture, we cycle through the tasks multiple times in sequence until there is no performance improvement.  Results on two benchmark domains show that the joint architecture improves over the pipeline approach as well as the previous state-of-the-art approach based on graphical models. The cyclic architecture is faster than the joint approach and achieves competitive performance.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{moniz17,
+  title =        {Nested LSTMs},
+  author =       {Moniz, Joel Ruben Antony and Krueger, David},
+  pages =        {530-544},
+  abstract =     {We propose \emph{Nested LSTMs} (NLSTM), a novel RNN architecture with multiple levels of memory. Nested LSTMs add depth to LSTMs via nesting as opposed to stacking. The value of a memory cell in an NLSTM is computed by an LSTM cell, which has its own {\it inner} memory cell. Specifically, instead of computing the value of the (outer) memory cell as $c^{outer}_t = f_t \odot c_{t-1} + i_t \odot g_t$, NLSTM memory cells use the concatenation $(f_t \odot c_{t-1}, i_t \odot g_t)$ as input to an inner LSTM (or NLSTM) memory cell, and set $c^{outer}_t$ = $h^{inner}_t$. Nested LSTMs outperform both stacked and single-layer LSTMs with similar numbers of parameters in our experiments on various character-level language modeling tasks, and the inner memories of an LSTM learn longer term dependencies compared with the higher-level units of a stacked LSTM.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{cao17,
+  title =        {On the Flatness of Loss Surface for Two-layered ReLU Networks},
+  author =       {Cao, Jiezhang and Wu, Qingyao and Yan, Yuguang and Wang, Li and Tan, Mingkui},
+  pages =        {545-560},
+  abstract =     {Deep learning has achieved unprecedented practical success in many applications. Despite its empirical success, however, the theoretical understanding of deep neural networks still remains a major open problem. In this paper, we explore properties of two-layered ReLU networks. For simplicity, we assume that the optimal model parameters (also called ground-truth parameters) are known. We then assume that a network receives Gaussian input and is trained by minimizing the expected squared loss between the prediction function of the network and a target function. To conduct the analysis, we propose a normal equation for critical points, and study the invariances under three kinds of transformations, namely, scale transformation, rotation transformation and perturbation transformation. We prove that these transformations can keep the loss of a critical point invariant, thus can incur flat regions. Consequently, how to escape from flat regions is vital in training neural networks.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{ke17,
+  title =        {Radical-level Ideograph Encoder for RNN-based Sentiment Analysis of Chinese and Japanese},
+  author =       {Ke, Yuanzhi and Hagiwara, Masafumi},
+  pages =        {561-573},
+  abstract =     {The character vocabulary can be very large in non-alphabetic languages such as Chinese and Japanese, which makes neural network models huge to process such languages. We explored a model for sentiment classification that takes the embeddings of the radicals of the Chinese characters, i.e, hanzi of Chinese and kanji of Japanese. Our model is composed of a CNN word feature encoder and a bi-directional RNN document feature encoder. The results achieved are on par with the character embedding-based models, and close to the state-of-the-art word embedding-based models, with 90\% smaller vocabulary, and at least 13\% and 80\% fewer parameters than the character embedding-based models and word embedding-based models respectively. The results suggest that the radical embeddingbased approach is cost-effective for machine learning on Chinese and Japanese.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{tian17,
+  title =        {Recovering Probability Distributions from Missing Data},
+  author =       {Tian, Jin},
+  pages =        {574-589},
+  abstract =     {A probabilistic query may not be estimable from observed data corrupted by missing values if the data are not missing at random (MAR). It is therefore of theoretical interest and practical importance to determine in principle whether a probabilistic query is estimable from missing data or not when the data are not MAR. We present algorithms that systematically determine whether the joint probability distribution or a target marginal distribution is estimable from observed data with missing values,  assuming that the data-generation model is represented as a Bayesian network, known as m-graphs, that not only encodes the dependencies among the variables but also explicitly portrays the mechanisms responsible for the missingness process. The results significantly advance the existing work.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{jiang17,
+  title =        {Attentive Path Combination for Knowledge Graph Completion},
+  author =       {Jiang, Xiaotian and Wang, Quan and Qi, Baoyuan and Qiu, Yongqin and Li, Peng and Wang, Bin},
+  pages =        {590-605},
+  abstract =     {Knowledge graphs (KGs) are often significantly incomplete, necessitating a demand for KG completion. Path-based relation inference is one of the most important approaches to this task. Traditional methods treat each path between entity pairs as an atomic feature, thus inducing sparsity. Recently, neural network models solve this problem by decomposing a path as the sequence of relations in the path, before modelling path representations with Recurrent Neural Network (RNN) architectures. In cases there are multiple paths between an entity pair, state-of-the-art neural models either select only one path, or make usage of simple score pooling methods like Top-K, Average, LogSumExp. Unfortunately, none of these methods can model the scenario where relations can only be inferred by considering multiple informative paths collectively. In this paper, we propose a novel path-based relation inference model that learns entity pair representations with attentive path combination. Given an entity pair and a set of paths connecting the pair, our model allows for integrating information from each informative path, and form a dynamic entity pair representation for each query relation. We empirically evaluate the proposed method on a real-world dataset. Experimental results show that the proposed model achieves better performance than state-of-the-art path-based relation inference methods.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{vien17,
+  title =        {A Covariance Matrix Adaptation Evolution Strategy for Direct Policy Search in Reproducing Kernel Hilbert Space},
+  author =       {Vien, Ngo Anh and Dang, Viet-Hung and Chung, TaeChoong},
+  pages =        {606-621},
+  abstract =     {The covariance matrix adaptation evolution strategy (CMA-ES) is an efficient derivative-free optimization algorithm. It optimizes a black-box objective function over a well defined parameter space. In some problems, such parameter spaces are defined using function approximation in which feature functions are manually defined. Therefore, the performance of those techniques strongly depends on the quality of chosen features. Hence, enabling CMA-ES to optimize on a more complex and general function class of the objective has long been desired. Specifically, we consider modeling the input space for black-box optimization in reproducing kernel Hilbert spaces (RKHS). This modeling leads to a functional optimization problem whose domain is a function space that enables us to optimize in a very rich function class. In addition, we propose CMA-ES-RKHS, a generalized CMA-ES framework, that performs black-box functional optimization in RKHS. A search distribution, represented as a Gaussian process, is adapted by updating both its mean function and covariance operator. Adaptive representation of the mean function and the covariance operator is achieved by resorting to sparsification. CMA-ES-RKHS is evaluated on two simple functional optimization problems and two bench-mark reinforcement learning (RL) domains. For an application in RL, we model policies for MDPs in RKHS and transform a cumulative return objective as a functional of RKHS policies, which can be optimized via CMA-ES-RKHS. This formulation results in a black-box functional policy search framework.},
+  section =      {Accepted Papers}
+}
+
+@INPROCEEDINGS{cai17,
+  title =        {\emph{NeuralPower}: Predict and Deploy Energy-Efficient Convolutional Neural Networks},
+  author =       {Cai, Ermao and Juan, Da-Cheng and Stamoulis, Dimitrios and Marculescu, Diana},
+  pages =        {622-637},
+  abstract =     {``How much energy is consumed for an inference made by a convolutional neural network (CNN)?'' With the increased popularity of CNNs deployed on the wide-spectrum of platforms (from mobile devices to workstations), the answer to this question has drawn significant attention. From lengthening battery life of mobile devices to reducing the energy bill of a datacenter, it is important to understand the energy efficiency of CNNs during serving for making an inference, before actually training the model. In this work, we propose \NP: a layer-wise predictive framework based on sparse polynomial regression, for predicting the serving energy consumption of a CNN deployed on any GPU platform. Given the architecture of a CNN, \NP provides an accurate prediction and breakdown for power and runtime across all layers in the whole network, helping machine learners quickly identify the power, runtime, or energy bottlenecks. We also propose the \textit{``energy-precision ratio'' (EPR)} metric to guide machine learners in selecting an energy-efficient CNN architecture that better trades off the energy consumption and prediction accuracy. The experimental results show that the prediction accuracy of the proposed \NP outperforms the best published model to date, yielding an improvement in accuracy of up to $68.5\%$. We also assess the accuracy of predictions at the network level, by predicting the runtime, power, and energy of state-of-the-art CNN architectures, achieving an average accuracy of $88.24\%$ in runtime, $88.34\%$ in power, and $97.21\%$ in energy. We comprehensively corroborate the effectiveness of \NP as a powerful framework for machine learners by testing it on different GPU platforms and Deep Learning software tools.},
+  section =      {Accepted Papers}
+}
