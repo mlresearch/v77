@@ -6,7 +6,7 @@ volume: 77
 start: 2017-11-15
 end: 2017-11-17
 published: 2017-11-11
-location: Yonsei University, Seoul, Republic of Korea
+address: Yonsei University, Seoul, Republic of Korea
 url: http://proceedings.mlr.press
 sections:
 - name: Preface
