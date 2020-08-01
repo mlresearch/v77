@@ -8,6 +8,8 @@ end: 2017-11-17
 published: 2017-11-11
 address: Yonsei University, Seoul, Republic of Korea
 url: http://proceedings.mlr.press
+author:
+  name: PMLR
 sections:
 - name: Preface
   title: Preface
