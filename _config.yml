@@ -16,6 +16,7 @@ sections:
 - name: Accepted Papers
   title: Accepted Papers
 layout: proceedings
+publisher: PMLR
 series: Proceedings of Machine Learning Research
 issn: 2640-3498
 id: ACML-2017
